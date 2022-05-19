@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-05-19 14:02:48 / Modified: 14:31:10" itemprop="dateCreated datePublished" datetime="2022-05-19T14:02:48+08:00">2022-05-19</time>
+              <time title="Created: 2022-05-19 14:02:48 / Modified: 23:10:36" itemprop="dateCreated datePublished" datetime="2022-05-19T14:02:48+08:00">2022-05-19</time>
             </span>
 
           
@@ -184,7 +184,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="根据官网信息下载nodejs和hexo"><a href="#根据官网信息下载nodejs和hexo" class="headerlink" title="根据官网信息下载nodejs和hexo"></a>根据官网信息下载nodejs和hexo</h2><h2 id="下载NexT"><a href="#下载NexT" class="headerlink" title="下载NexT"></a>下载NexT</h2><h2 id="GitHub-pages-托管"><a href="#GitHub-pages-托管" class="headerlink" title="GitHub pages 托管"></a>GitHub pages 托管</h2><h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2>
+          <h2 id="根据官网信息下载nodejs和hexo"><a href="#根据官网信息下载nodejs和hexo" class="headerlink" title="根据官网信息下载nodejs和hexo"></a>根据官网信息下载nodejs和hexo</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/docs/">hexo连接</a><br>根据文档来咯<br>install hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ npm install hexo</span><br><span class="line">\\text</span><br><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo-部署本地"><a href="#hexo-部署本地" class="headerlink" title="hexo 部署本地"></a>hexo 部署本地</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;root name&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;your root&gt;</span><br><span class="line">hexo new &lt;blog name&gt;</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">\\check your localhost:4000</span><br></pre></td></tr></table></figure>
+<h2 id="下载NexT"><a href="#下载NexT" class="headerlink" title="下载NexT"></a>下载NexT</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br><span class="line">\\change your _config.yml <span class="keyword">in</span> your root</span><br><span class="line">\\also your can consume your sheme <span class="keyword">in</span> _config.yml <span class="keyword">in</span> ./theme/next</span><br></pre></td></tr></table></figure>
+
+<h2 id="GitHub-pages-托管"><a href="#GitHub-pages-托管" class="headerlink" title="GitHub pages 托管"></a>GitHub pages 托管</h2><p>创建repo like ：<yourgithubid>.github.io then after your generated your local repo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\\change file _config.yml</span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  repo: <span class="string">&quot;git@github.com:ecoli-hit/ecoli-hit.github.io.git&quot;</span></span><br><span class="line"></span><br><span class="line">\\just use the default branch to deploye would be ok</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>then check your repo like below<br><img src="/images/blog1-1.png"><br>make sure you have got the source in target branch<br>now here we are access your site by the url you have above</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping &lt;your repo&gt;\\get the ip</span><br></pre></td></tr></table></figure>
+<p>the resolve domain names as below<br><img src="/images/blog1-2.png"><br>now back to you repo setting fill you domain in your Custom domain it’ll take some time to vertify your domain,once it finished you can access your site usr your domain</p>
+
       
     </div>
 
