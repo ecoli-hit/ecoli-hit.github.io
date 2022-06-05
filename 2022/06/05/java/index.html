@@ -20,28 +20,87 @@
     var CONFIG = {"hostname":"ecoli-hit.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://ecoli-hit.github.io/index.html">
+  <meta name="description" content="java集合数组的长度是固定的，集合的长度是可变的；数组用来存放基本类型的数据和对象的引用，集合只能用来存放对象的引用。  List有序对象集合，允许重复，动态内存  ArrayList 频繁访问列表中某一个元素  只需要在列表的末尾进行添加和删除操作  site.add(position,value)&#x2F;&#x2F;after position site.remove(position) site.get(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#x2F;images&#x2F;java">
+<meta property="og:url" content="http://ecoli-hit.github.io/2022/06/05/java/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="java集合数组的长度是固定的，集合的长度是可变的；数组用来存放基本类型的数据和对象的引用，集合只能用来存放对象的引用。  List有序对象集合，允许重复，动态内存  ArrayList 频繁访问列表中某一个元素  只需要在列表的末尾进行添加和删除操作  site.add(position,value)&#x2F;&#x2F;after position site.remove(position) site.get(">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220604100249021-16543081722571.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220604101432096.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220604101514420.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605103156502.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605103647779.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605104751523.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605104818652.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605105135857.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605105118769.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605110246006.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605110603566.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605110611415.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605110656789.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605110730060.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605110748590.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605110821687.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605110920242.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605111035556.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605111128608.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605111233413.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605111243400.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605111647430.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605111717012.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605111821671.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605112044099.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605112104289.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605112132103.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605112147365.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605112211464.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605112252894.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605112258045.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605112315254.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605142620938.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605142627725.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605142659417.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605142720677.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605143202293.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605143220435.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605143410113.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605143436322.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605143516462.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605143930032.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605144129355.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605144414292.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605144621921.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605144633982.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605144851018.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605145652492.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605145736574.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605151350719.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605151450198.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605151455259.png">
+<meta property="og:image" content="http://ecoli-hit.github.io/images/java/image-20220605151559663.png">
+<meta property="article:published_time" content="2022-06-05T07:18:03.000Z">
+<meta property="article:modified_time" content="2022-06-05T07:21:35.470Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ecoli-hit.github.io/images/java/image-20220604100249021-16543081722571.png">
 
-<link rel="canonical" href="http://ecoli-hit.github.io/">
+<link rel="canonical" href="http://ecoli-hit.github.io/2022/06/05/java/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>/images/java | Hexo</title>
   
 
 
@@ -139,9 +198,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -157,10 +217,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/06/05/java/" class="post-title-link" itemprop="url">/images/java</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          /images/java
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +243,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><p>数组的长度是固定的，集合的长度是可变的；数组用来存放基本类型的数据和对象的引用，集合只能用来存放对象的引用。</p>
+        <h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><p>数组的长度是固定的，集合的长度是可变的；数组用来存放基本类型的数据和对象的引用，集合只能用来存放对象的引用。</p>
 <p><img src="/images/java/image-20220604100249021-16543081722571.png" alt="image-20220604100249021"></p>
 <h3 id="List"><a href="#List" class="headerlink" title="List"></a>List</h3><p>有序对象集合，允许重复，动态内存</p>
 <ol>
@@ -331,449 +390,33 @@ site.size()
 
 <p><img src="/images/java/image-20220605151559663.png" alt="image-20220605151559663"></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/java/" rel="tag"># java</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ecoli-hit.github.io/2022/06/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/06/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" class="post-title-link" itemprop="url">设计模式</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-06-04 10:23:33 / Modified: 10:40:33" itemprop="dateCreated datePublished" datetime="2022-06-04T10:23:33+08:00">2022-06-04</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h3 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h3><ol>
-<li><p>单一职责原则：一个类仅有一个引起变化的因素（降低耦合性）</p>
-</li>
-<li><p>开闭原则：软件实体对扩展开放对修改封闭，及可以在不修改的情况下扩展</p>
-<ul>
-<li>通过接口和抽象类规定类的特征：相对稳定不易更改，完成对修改封闭</li>
-<li>从抽象类中导出具体类即对扩展开放</li>
-</ul>
-</li>
-<li><p>里氏代换原则：超类可被子类替换</p>
-<ul>
-<li>反之不成立</li>
-</ul>
-</li>
-<li><p>依赖倒转原则：高层模块不依赖与底层模块。应依赖于相应的抽象，即面向接口编程（请举例）</p>
-<ul>
-<li>应当使用接口和抽象类进行变量类型声明、参数类型声明、方法返还类 型说明，以及数据类型的转换等，而不要使用具体类。、</li>
-<li>传统的过程性系统的设计办法倾向于使高层次的模块依赖于低层次的模 块，抽象层次依赖于具体层次。倒转原则就是把这个错误的依赖关系倒 转过来</li>
-</ul>
-</li>
-<li><p>合成复用原则：尽量使用对象组合而不是继承来达到复用的目的</p>
-<ul>
-<li>在新对象中使用已有的对象，对已有对象进行委派达到目的</li>
-<li>其次考虑继承以遵循前述原则，滥用继承可能会增加系统构架和维护时的复杂度</li>
-</ul>
-</li>
-<li><p>接口隔离原则：客户端不应该依赖他不需要的接口</p>
-<ul>
-<li>使用多个专门的接口比使用单一的总接口好。依赖建立于最小的接口上</li>
-<li>当一个接口过大，应将其分为多个小接口，使用该接口的客户端只需要知道与之相关的方法</li>
-</ul>
-</li>
-<li><p>迪米特法则：一个软件实体应当尽可能少的与其他实体发生相互作用</p>
-<ul>
-<li>每一个软件单位对其他的单位都只有最少的知识，而且局限于那些 与本单位密切相关的软件单位</li>
-<li>当一个模块修改时，就会尽量少的影响其他的模块。扩展会 相对容易。这是对软件实体之间通信的限制。它要求限制软件实体 之间通信的宽度和深度</li>
-</ul>
-</li>
-</ol>
-<h3 id="设计模式概念"><a href="#设计模式概念" class="headerlink" title="设计模式概念"></a>设计模式概念</h3><p>代码设计经验总结。描述不断重复事件及其解决方法。提高代码可重用性、可阅读性和可靠性。</p>
-<p>四个基本要素：模式名、问题、解决方案、效果</p>
-<p><strong>作用：</strong></p>
-<ol>
-<li>重用设计</li>
-<li>方便交流</li>
-<li>方便文档编写</li>
-<li>减少重构代价，确保代码正确性，减少错误</li>
-<li>提供框架</li>
-<li>节省时间</li>
-</ol>
-<p><strong>分类</strong>：</p>
-<ol>
-<li>目的<ol>
-<li>创建型模式：怎样创建（将创建与使用分离）</li>
-<li>结构型模式：如何将类和对象布局</li>
-<li>行为型模式：类或对象之间如何相互配合工作怎样进行智能分配</li>
-</ol>
-</li>
-<li>范围<ol>
-<li>类模式：类与类之间的关系，通过继承来建立，静态的，编译时确定</li>
-<li>对象模式：对象之间的关系，组合或聚合实现，在运行时可以变化，具有动态性</li>
-</ol>
-</li>
-</ol>
-<p><img src="/images/image-20220601213122043.png" alt="image-20220601213122043"></p>
-<h3 id="1-单例模式"><a href="#1-单例模式" class="headerlink" title="1.单例模式"></a>1.单例模式</h3><p>保证仅有一个对象实例，提供相应的全局访问点</p>
-<h4 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h4><ol>
-<li><p>饿汉式：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">Singleton</span> <span class="variable">singleton</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton</span> <span class="params">()</span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> singleton ;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>懒汉式：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance ;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton</span> <span class="params">()</span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="literal">null</span>)&#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance ;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>同步锁：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance ;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton</span> <span class="params">()</span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//不会有两个线程同时进入此方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> sychronized <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="literal">null</span>)&#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance ;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>方案：</p>
-<ol>
-<li>私有变量保存单例</li>
-<li>公有静态方法获取</li>
-<li>类定义实例创建时间</li>
-</ol>
-<p><strong>优点</strong>：</p>
-<ol>
-<li>对唯一实例的受控访问</li>
-<li>仅有一个实例减少了内存开销</li>
-<li>避免对共享资源的多重占用</li>
-<li>允许可变数目实例</li>
-<li>可以全局访问</li>
-</ol>
-<h3 id="2-工厂模式"><a href="#2-工厂模式" class="headerlink" title="2.工厂模式"></a>2.工厂模式</h3><h4 id="原始模式："><a href="#原始模式：" class="headerlink" title="原始模式："></a>原始模式：</h4><p><img src="/images/image-20220602094404976.png" alt="image-20220602094404976"></p>
-<p><img src="/images/image-20220602094443031.png" alt="image-20220602094443031"></p>
-<h4 id="简单工厂"><a href="#简单工厂" class="headerlink" title="简单工厂"></a>简单工厂</h4><p>将创建pizza转移到简单工厂中</p>
-<p><img src="/images/image-20220602094747906.png" alt="image-20220602094747906"></p>
-<p><img src="/images/image-20220602094943323-16541345869544.png" alt="image-20220602094943323"></p>
-<p>没有满足ocp原则 </p>
-<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><p><img src="/images/image-20220602095514785-16541349171296.png" alt="image-20220602095514785"></p>
-<p><img src="/images/image-20220602095537305-165413493955110.png" alt="image-20220602095537305"></p>
-<p><strong>比较</strong>：</p>
-<ol>
-<li>简单工厂：<ul>
-<li>不符合开闭原则，用户不感知具体的类，修改时需要修改工厂类</li>
-</ul>
-</li>
-<li>工厂模式：<ul>
-<li>符合开闭原则，但是客户端需要感知具体的工厂类</li>
-<li>横向扩展方便，不用修改代码</li>
-</ul>
-</li>
-</ol>
-<h4 id="抽象工厂"><a href="#抽象工厂" class="headerlink" title="抽象工厂"></a>抽象工厂</h4><p><img src="/images/image-20220602100239635-165413536261014.png" alt="image-20220602100239635"></p>
-<p><img src="/images/image-20220602100128496-165413529089612.png" alt="image-20220602100128496"></p>
-<p><strong>评价</strong>：</p>
-<ol>
-<li>优点：<ul>
-<li>保证客户端只使用同一个产品族的对象</li>
-</ul>
-</li>
-<li>缺点：<ul>
-<li>产品的增加困难</li>
-<li>增加了系统的抽象性和理解难度</li>
-</ul>
-</li>
-</ol>
-<h3 id="3-策略模式"><a href="#3-策略模式" class="headerlink" title="3.策略模式"></a>3.策略模式</h3><p>简化多种算法选择的if-else语句</p>
-<p>将算法和对象分开</p>
-<p>将一组算法相同的过程提取到抽象类中</p>
-<p>逻辑判断在client中</p>
-<p><img src="/images/image-20220602100924972-165413576764816.png" alt="image-20220602100924972"></p>
-<p><img src="/images/image-20220602100939031-165413578129618.png" alt="image-20220602100939031"></p>
-<p><img src="/images/image-20220602101010388-165413581294420.png" alt="image-20220602101010388"></p>
-<p>封装了算法</p>
-<p>方便算法替换</p>
-<p>客户端决定算法的使用</p>
-<p>其重心在于如何组织调度算法</p>
-<p>算法的平等性</p>
-<p>优点：</p>
-<ol>
-<li>提供了一种替代继承的方法，而且既保持了继承的优点（代码重用）还比继承更灵活 （算法独立，可以任意扩展）</li>
-<li>它把采取哪一种算法或采取哪一种行为的逻辑与算法本身分离，避免程序中使用多重 条件转移语句，使系统更灵活，并易于扩展。</li>
-<li>遵守大部分设计原则，高内聚、低偶合</li>
-</ol>
-<p>缺点：</p>
-<ol>
-<li>客户端必须知道所有的策略类，并自行决定使用哪一个策略类。这就意味着客户端必 须理解这些算法的区别，以便适时选择恰当的算法类。换言之，策略模式只适用于客 户端知道算法或行为的情况。</li>
-<li>由于策略模式把每个具体的策略实现都单独封装成为类，如果备选的策略很多的话， 那么对象的数目就会很可观。</li>
-</ol>
-<h3 id="4-迭代器模式"><a href="#4-迭代器模式" class="headerlink" title="4.迭代器模式"></a>4.迭代器模式</h3><p>在客户访问类与聚合类之间插入一个迭代器，这分离了聚合对象与其遍历行为，对客户也隐藏了其内部细节， 且满足“单一职责原则”和“开闭原则”。</p>
-<p><img src="/images/image-20220602101722938.png" alt="image-20220602101722938"></p>
-<p><img src="/images/image-20220602101821737.png" alt="image-20220602101821737"></p>
-<h3 id="5-数据访问对象模式（DAO）"><a href="#5-数据访问对象模式（DAO）" class="headerlink" title="5.数据访问对象模式（DAO）"></a>5.数据访问对象模式（DAO）</h3><p>将数据访问从高级业务中分离</p>
-<p>内容：</p>
-<ul>
-<li>数据访问接口</li>
-<li>数据访问实体类</li>
-<li>模型对象&#x2F;数值对象</li>
-</ul>
-<p>优点：隔离数据层</p>
-<p>缺点：代码量增加</p>
-<p><img src="/images/image-20220602161132296.png" alt="image-20220602161132296"></p>
-<h3 id="6-MVC模式"><a href="#6-MVC模式" class="headerlink" title="6.MVC模式"></a>6.MVC模式</h3><p>组件特征：内容、外观、行为</p>
-<p>MVC模式：</p>
-<ol>
-<li>模型：<ul>
-<li>存储完整的内容</li>
-<li>实现改变内容和查找内容的方法</li>
-<li>模型没有用户界面，是完全不可见的</li>
-</ul>
-</li>
-<li>视图<ul>
-<li>一个模型可以有多个视图</li>
-<li>每个视图可以显示全部或不同部分和不同方面的内容</li>
-<li>模型更新时，相关联的视图同步更新</li>
-</ul>
-</li>
-<li>控制器：<ul>
-<li>使视图和模型分离</li>
-<li>负责处理用户输入事件</li>
-<li>决定对事件对模型的更改</li>
-</ul>
-</li>
-</ol>
-<p><img src="/images/image-20220602161712250.png" alt="image-20220602161712250"></p>
-<h3 id="7-生产者-消费者模式"><a href="#7-生产者-消费者模式" class="headerlink" title="7.生产者-消费者模式"></a>7.生产者-消费者模式</h3><p><img src="/images/image-20220602161821819-16541579026421.png" alt="image-20220602161821819"></p>
-<ul>
-<li>如果生产者生产速度过快，消费者消费的很慢，并且缓存区达到了最大时。 缓存区会阻塞生产者，让生产者停止生产，等待消费者消费了数据后，再 唤醒生产者</li>
-<li>当消费者消费速度过快时，缓存区为空时。缓存区则会阻塞消费者，待生 产者向队列添加数据后，再唤醒消费者。</li>
-<li>数据一致问题：同步锁（synchronized）</li>
-<li>消费者和生产者的协同：线程内部通信（wait（），notify（））</li>
-</ul>
-<p>缓冲区：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Buffer</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> List&lt;Integer&gt; data = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>缓冲区的判断条件为while不是if：防止错误的唤醒</p>
-<p>java 中wait（）在同步块内： 防止出现Lost Wake-up</p>
-<p>优点：</p>
-<ol>
-<li><p>并发：通过异步实现高并发，将一个耗时的流程进行拆分</p>
-</li>
-<li><p>解耦：生产和消费进行解耦</p>
-</li>
-</ol>
-<h3 id="8-观察者模式"><a href="#8-观察者模式" class="headerlink" title="8.观察者模式"></a>8.观察者模式</h3><p>一个对象的状态或行为的变化将导致其他对象的状态和行为也发生改变</p>
-<ul>
-<li>定义了对象间一种一对多的依赖关系</li>
-<li>发生改变的对象称为观察目标，被通知的对象为观察者</li>
-<li>一个观察目标可以对应多个观察者</li>
-<li>是一种对象行为型模式</li>
-</ul>
-<p><img src="/images/image-20220602162924613-16541585655373.png" alt="image-20220602162924613"></p>
-<p><img src="/images/image-20220602162955955.png" alt="image-20220602162955955"></p>
-<p><img src="/images/image-20220602163004787.png" alt="image-20220602163004787"></p>
-<p>优点：</p>
-<ol>
-<li>实现表示层和数据逻辑的分离</li>
-<li>观测目标和观察者之间的抽象的耦合</li>
-<li>支持广播通信，简化了一对多系设计的难度</li>
-<li>符合开闭原则，新增具体的观察者无需修改</li>
-</ol>
-<p>缺点：</p>
-<ol>
-<li>遍历观察者开销大</li>
-<li>存在循环依赖会导致系统崩溃</li>
-<li>没有响应的机制让观察者知道所观察的对象发生变化的原因</li>
-</ol>
-<p>使用场景：</p>
-<ol>
-<li>一个抽象模型有两个方面，其中一个方面依赖于另一个方面，将这两个方面 封装在独立的对象中使它们可以各自独立地改变和复用 </li>
-<li>一个对象的改变将导致一个或多个其他对象发生改变，且并不知道具体有多 少对象将发生改变，也不知道这些对象是谁 </li>
-<li>需要在系统中创建一个触发链</li>
-</ol>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/06/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" rel="prev" title="设计模式">
+      <i class="fa fa-chevron-left"></i> 设计模式
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ecoli-hit.github.io/2022/05/19/%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84hexo%E8%BF%87%E7%A8%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/05/19/%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84hexo%E8%BF%87%E7%A8%8B/" class="post-title-link" itemprop="url">记录我的hexo过程</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-05-19 14:02:48 / Modified: 23:10:36" itemprop="dateCreated datePublished" datetime="2022-05-19T14:02:48+08:00">2022-05-19</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="根据官网信息下载nodejs和hexo"><a href="#根据官网信息下载nodejs和hexo" class="headerlink" title="根据官网信息下载nodejs和hexo"></a>根据官网信息下载nodejs和hexo</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/docs/">hexo连接</a><br>根据文档来咯<br>install hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ npm install hexo</span><br><span class="line">\\text</span><br><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo-部署本地"><a href="#hexo-部署本地" class="headerlink" title="hexo 部署本地"></a>hexo 部署本地</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;root name&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;your root&gt;</span><br><span class="line">hexo new &lt;blog name&gt;</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">\\check your localhost:4000</span><br></pre></td></tr></table></figure>
-<h2 id="下载NexT"><a href="#下载NexT" class="headerlink" title="下载NexT"></a>下载NexT</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br><span class="line">\\change your _config.yml <span class="keyword">in</span> your root</span><br><span class="line">\\also your can consume your sheme <span class="keyword">in</span> _config.yml <span class="keyword">in</span> ./theme/next</span><br></pre></td></tr></table></figure>
-
-<h2 id="GitHub-pages-托管"><a href="#GitHub-pages-托管" class="headerlink" title="GitHub pages 托管"></a>GitHub pages 托管</h2><p>创建repo like ：<yourgithubid>.github.io then after your generated your local repo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\\change file _config.yml</span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  repo: <span class="string">&quot;git@github.com:ecoli-hit/ecoli-hit.github.io.git&quot;</span></span><br><span class="line"></span><br><span class="line">\\just use the default branch to deploye would be ok</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>then check your repo like below<br><img src="/images/blog1-1.png"><br>make sure you have got the source in target branch<br>now here we are access your site by the url you have above</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping &lt;your repo&gt;\\get the ip</span><br></pre></td></tr></table></figure>
-<p>the resolve domain names as below<br><img src="/images/blog1-2.png"><br>now back to you repo setting fill you domain in your Custom domain it’ll take some time to vertify your domain,once it finished you can access your site usr your domain</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ecoli-hit.github.io/2022/05/19/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/05/19/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-05-19 13:30:01" itemprop="dateCreated datePublished" datetime="2022-05-19T13:30:01+08:00">2022-05-19</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -826,6 +469,7 @@ site.size()
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#java"><span class="nav-number">1.</span> <span class="nav-text">java</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%86%E5%90%88"><span class="nav-number">1.1.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#List"><span class="nav-number">1.1.1.</span> <span class="nav-text">List</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#set"><span class="nav-number">1.1.2.</span> <span class="nav-text">set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Map"><span class="nav-number">1.1.3.</span> <span class="nav-text">Map</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E4%B8%8E%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.</span> <span class="nav-text">流与输入输出</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%81"><span class="nav-number">1.2.1.</span> <span class="nav-text">流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81"><span class="nav-number">1.2.2.</span> <span class="nav-text">输入输出流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.3.</span> <span class="nav-text">文件的输入输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%81%E6%A1%86%E6%9E%B6"><span class="nav-number">1.2.4.</span> <span class="nav-text">流框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.5.</span> <span class="nav-text">操作文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#path"><span class="nav-number">1.2.5.1.</span> <span class="nav-text">path</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#file"><span class="nav-number">1.2.5.2.</span> <span class="nav-text">file</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95"><span class="nav-number">1.2.5.3.</span> <span class="nav-text">创建文件和目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%8D%E5%88%B6%E7%A7%BB%E5%8A%A8%E5%92%8C%E5%88%A0%E9%99%A4"><span class="nav-number">1.2.5.4.</span> <span class="nav-text">复制移动和删除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF"><span class="nav-number">1.2.5.5.</span> <span class="nav-text">获取文件信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E5%92%8C%E5%BA%8F%E5%88%97%E5%8C%96"><span class="nav-number">1.2.6.</span> <span class="nav-text">对象输入输出和序列化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Swing"><span class="nav-number">1.3.</span> <span class="nav-text">Swing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6"><span class="nav-number">1.3.1.</span> <span class="nav-text">事件机制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="nav-number">1.4.</span> <span class="nav-text">多线程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E7%BA%BF%E7%A8%8B%E7%9A%84%E6%8E%A7%E5%88%B6"><span class="nav-number">1.4.1.</span> <span class="nav-text">对线程的控制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%EF%BC%9A"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">线程的状态：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%88%E6%AD%A2%E7%BA%BF%E7%A8%8B"><span class="nav-number">1.4.1.3.</span> <span class="nav-text">终止线程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.4.1.4.</span> <span class="nav-text">状态转换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E3%80%81%E6%AD%BB%E9%94%81"><span class="nav-number">1.4.2.</span> <span class="nav-text">同步、死锁</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E5%B0%84%E5%92%8C%E6%B3%9B%E5%9E%8B"><span class="nav-number">1.5.</span> <span class="nav-text">反射和泛型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%9B%E5%9E%8B%E7%B1%BB%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%96%B9%E6%B3%95"><span class="nav-number">1.5.1.</span> <span class="nav-text">泛型类、接口、方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%9B%E5%9E%8B%E9%80%9A%E9%85%8D%E7%AC%A6"><span class="nav-number">1.5.2.</span> <span class="nav-text">泛型通配符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%B0%84"><span class="nav-number">1.5.3.</span> <span class="nav-text">反射</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E5%8F%8D%E5%B0%84%E6%9E%84%E9%80%A0%E7%B1%BB%E7%9A%84%E5%AE%9E%E4%BE%8B"><span class="nav-number">1.5.3.1.</span> <span class="nav-text">通过反射构造类的实例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E5%92%8C%E4%BF%AE%E6%94%B9%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F"><span class="nav-number">1.5.3.2.</span> <span class="nav-text">获取和修改成员变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95"><span class="nav-number">1.5.3.3.</span> <span class="nav-text">获取成员方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E5%AE%89%E5%85%A8%E5%8D%95%E4%BE%8B"><span class="nav-number">1.5.4.</span> <span class="nav-text">设计安全单例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C"><span class="nav-number">1.6.</span> <span class="nav-text">网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#socket"><span class="nav-number">1.6.1.</span> <span class="nav-text">socket</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#URL"><span class="nav-number">1.6.2.</span> <span class="nav-text">URL</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
