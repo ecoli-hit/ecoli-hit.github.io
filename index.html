@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -14,17 +14,17 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"ecoli-hit.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"ecoli-hit.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
+
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="ECOLI">
 <meta property="og:url" content="http://ecoli-hit.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="ECOLI">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -37,11 +37,11 @@
     sidebar: "",
     isHome : true,
     isPost : false,
-    lang   : 'en'
+    lang   : 'zh-CN'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>ECOLI</title>
   
 
 
@@ -81,7 +81,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -92,13 +92,14 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">ECOLI</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -110,19 +111,56 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -144,7 +182,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ecoli-hit.github.io/2022/06/05/java/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -154,12 +192,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="ECOLI">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/06/05/java/" class="post-title-link" itemprop="url">/images/java</a>
+            <a href="/2022/06/05/java/" class="post-title-link" itemprop="url">java</a>
         </h2>
 
         <div class="post-meta">
@@ -167,11 +205,17 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2022-06-05 15:18:03 / Modified: 15:21:35" itemprop="dateCreated datePublished" datetime="2022-06-05T15:18:03+08:00">2022-06-05</time>
+              <time title="创建时间：2022-06-05 15:18:03" itemprop="dateCreated datePublished" datetime="2022-06-05T15:18:03+08:00">2022-06-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-06-18 16:25:25" itemprop="dateModified" datetime="2022-06-18T16:25:25+08:00">2022-06-18</time>
+              </span>
 
           
 
@@ -186,151 +230,14 @@
       
           <h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><p>数组的长度是固定的，集合的长度是可变的；数组用来存放基本类型的数据和对象的引用，集合只能用来存放对象的引用。</p>
 <p><img src="/images/java/image-20220604100249021-16543081722571.png" alt="image-20220604100249021"></p>
-<h3 id="List"><a href="#List" class="headerlink" title="List"></a>List</h3><p>有序对象集合，允许重复，动态内存</p>
-<ol>
-<li>ArrayList<ul>
-<li><p>频繁访问列表中某一个元素</p>
-</li>
-<li><p>只需要在列表的末尾进行添加和删除操作</p>
-</li>
-<li><pre><code class="java">site.add(position,value)//after position
-site.remove(position)
-site.get(position)
-site.size()
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line">     </span><br><span class="line">   </span><br><span class="line">2. LinkedList</span><br><span class="line">   + 需要频繁在列表开头、中间或指定位置进行添加和删除操作</span><br><span class="line">   </span><br><span class="line">   + ```java</span><br><span class="line">     site.addfirst()</span><br><span class="line">     site.add(position,value)</span><br><span class="line">     site.addlast()</span><br><span class="line">     site.removefirst()</span><br><span class="line">     site.removelast()</span><br><span class="line">     site.getFirst()</span><br><span class="line">     site.getLast()</span><br><span class="line">     </span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li></li>
-</ul>
-</li>
-</ol>
-<p>LinkedList增删效率高而朝招和修改效率低</p>
-<p>迭代for，foreach，iterator</p>
-<h3 id="set"><a href="#set" class="headerlink" title="set"></a>set</h3><p>无排序，不可重复</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">site.add()</span><br><span class="line">site.contains()</span><br><span class="line">   site.remove()</span><br><span class="line">   site.clear()</span><br><span class="line">   site.size()</span><br><span class="line">   </span><br></pre></td></tr></table></figure>
-
-<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p><img src="/images/java/image-20220604101432096.png" alt="image-20220604101432096"></p>
-<p><img src="/images/java/image-20220604101514420.png" alt="image-20220604101514420"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">site.put(key,value)</span><br><span class="line">site.get(key)</span><br><span class="line">site.remove(key)</span><br><span class="line">site.clear()</span><br><span class="line">site.size()</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="流与输入输出"><a href="#流与输入输出" class="headerlink" title="流与输入输出"></a>流与输入输出</h2><h3 id="流"><a href="#流" class="headerlink" title="流"></a>流</h3><p>流是一组有序的数据序列，将数据从一个地方带到另一个地方</p>
-<p><img src="/images/java/image-20220605103156502.png" alt="image-20220605103156502"></p>
-<h3 id="输入输出流"><a href="#输入输出流" class="headerlink" title="输入输出流"></a>输入输出流</h3><p>System.in</p>
-<p>System.out</p>
-<p>System.err</p>
-<p>读取控制台输入：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">BufferedReader</span> <span class="variable">br</span> <span class="operator">=</span> mew <span class="title function_">BufferedReader</span> <span class="params">(new InputStreamReader(System.in)</span>);</span><br><span class="line">br.read()</span><br><span class="line">br.readLine()</span><br></pre></td></tr></table></figure>
-
-<h3 id="文件的输入输出"><a href="#文件的输入输出" class="headerlink" title="文件的输入输出"></a>文件的输入输出</h3><p><img src="/images/java/image-20220605103647779.png" alt="image-20220605103647779"></p>
-<p>FileInputStream</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">InputStream</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileInputStream</span>(path);</span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="type">File</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span> (path);</span><br><span class="line"><span class="type">InputStream</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileInputStream</span>(f);</span><br></pre></td></tr></table></figure>
-
-<p>FileOutputStream</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">OutputStream</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(path);</span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="type">File</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span> (path);</span><br><span class="line"><span class="type">OutputStream</span> <span class="variable">fout</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(f);</span><br></pre></td></tr></table></figure>
-
-<p>eg:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">File</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span> (path);</span><br><span class="line"><span class="type">OutputStream</span> <span class="variable">fout</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(f);</span><br><span class="line"><span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(fout,<span class="string">&quot;UTF-8&quot;</span>);</span><br><span class="line">writer.append(<span class="string">&quot;dfdsfd&quot;</span>);</span><br><span class="line">writer.close()</span><br><span class="line">fout.close()</span><br><span class="line"><span class="comment">////</span></span><br><span class="line"><span class="type">File</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span> (path);</span><br><span class="line"><span class="type">InputStream</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileInputStream</span>(f);<span class="comment">//开启流</span></span><br><span class="line"><span class="type">InputSteamReader</span> <span class="variable">fin</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(in,<span class="string">&quot;UTF-8&quot;</span>);<span class="comment">//读入流</span></span><br><span class="line"><span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>();<span class="comment">//读入至缓冲区</span></span><br><span class="line"><span class="keyword">while</span> (fin.ready())&#123;</span><br><span class="line">	sb.append((<span class="type">char</span>) fin.read())</span><br><span class="line">&#125;</span><br><span class="line">sb.close();</span><br><span class="line">fin.close();</span><br></pre></td></tr></table></figure>
-
-<h3 id="流框架"><a href="#流框架" class="headerlink" title="流框架"></a>流框架</h3><p><img src="/images/java/image-20220605104751523.png" alt="image-20220605104751523"></p>
-<p><img src="/images/java/image-20220605104818652.png" alt="image-20220605104818652"></p>
-<p>Stream结尾都是字节流，Reader&#x2F;Writer结尾都是字符流</p>
-<p>都可关闭</p>
-<p>可转换</p>
-<p><img src="/images/java/image-20220605105135857.png" alt="image-20220605105135857"></p>
-<p><img src="/images/java/image-20220605105118769.png" alt="image-20220605105118769"></p>
-<h3 id="操作文件"><a href="#操作文件" class="headerlink" title="操作文件"></a>操作文件</h3><p>path&#x2F;file类</p>
-<h4 id="path"><a href="#path" class="headerlink" title="path"></a>path</h4><p>目录序列名。相对和绝对路径</p>
-<h4 id="file"><a href="#file" class="headerlink" title="file"></a>file</h4><p>Files是操作文件的工具类</p>
-<p>提供读写方法，受内存限制，只能读写小文件</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">byte</span>[] bytes = Files.readAllBytes(Path);</span><br><span class="line"><span class="type">String</span> <span class="variable">content</span> <span class="operator">=</span> Files.readString(Path,charset);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 写入二进制文件:</span></span><br><span class="line"><span class="type">byte</span>[] data = Files.write(Paths.get(<span class="string">&quot;/path/to/file.txt&quot;</span>), data);</span><br><span class="line"><span class="comment">// 写入文本并指定编码:</span></span><br><span class="line">Files.writeString(Paths.get(<span class="string">&quot;/path/to/file.txt&quot;</span>), </span><br><span class="line"><span class="string">&quot;文本内容...&quot;</span>, StandardCharsets.ISO_8859_1);</span><br><span class="line"><span class="comment">// 按行写入文本:</span></span><br><span class="line">List&lt;String&gt; lines = Files.write(Paths.get(<span class="string">&quot;/path/to/file.txt&quot;</span>), lines)</span><br></pre></td></tr></table></figure>
-
-<h4 id="创建文件和目录"><a href="#创建文件和目录" class="headerlink" title="创建文件和目录"></a>创建文件和目录</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Files.creatDirectory(Path);<span class="comment">//new </span></span><br><span class="line">Files.creatDirectories(Path);<span class="comment">// new middle </span></span><br><span class="line">Files.creatFile(Path)<span class="comment">//if exist ,throw exception</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="复制移动和删除"><a href="#复制移动和删除" class="headerlink" title="复制移动和删除"></a>复制移动和删除</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Files.move(fromPath, toPath, standardCopyOption.ATOMIC_MOVE);</span><br><span class="line">Files.delete(path);<span class="comment">//not exist throw exception</span></span><br><span class="line"><span class="type">boolean</span> <span class="variable">deleted</span> <span class="operator">=</span> Files.deleteIfExists(path);<span class="comment">//also for derictories</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="获取文件信息"><a href="#获取文件信息" class="headerlink" title="获取文件信息"></a>获取文件信息</h4><p><img src="/images/java/image-20220605110246006.png" alt="image-20220605110246006"></p>
-<h3 id="对象输入输出和序列化"><a href="#对象输入输出和序列化" class="headerlink" title="对象输入输出和序列化"></a>对象输入输出和序列化</h3><p>序列化用途：</p>
-<ol>
-<li>将对象的字节序列永久地保存在硬盘上，存放入文件中</li>
-<li>网络上传送对象的字节序列</li>
-</ol>
-<p><img src="/images/java/image-20220605110603566.png" alt="image-20220605110603566"></p>
-<p><img src="/images/java/image-20220605110611415.png" alt="image-20220605110611415"></p>
-<p><img src="/images/java/image-20220605110656789.png" alt="image-20220605110656789"></p>
-<h2 id="Swing"><a href="#Swing" class="headerlink" title="Swing"></a>Swing</h2><p><img src="/images/java/image-20220605110730060.png" alt="image-20220605110730060"></p>
-<p><img src="/images/java/image-20220605110748590.png" alt="image-20220605110748590"></p>
-<p><img src="/images/java/image-20220605110821687.png" alt="image-20220605110821687"></p>
-<h3 id="事件机制"><a href="#事件机制" class="headerlink" title="事件机制"></a>事件机制</h3><p><img src="/images/java/image-20220605110920242.png" alt="image-20220605110920242"></p>
-<p><img src="/images/java/image-20220605111035556.png" alt="image-20220605111035556"></p>
-<p><img src="/images/java/image-20220605111128608.png" alt="image-20220605111128608"></p>
-<h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><p><img src="/images/java/image-20220605111233413.png" alt="image-20220605111233413"></p>
-<p><img src="/images/java/image-20220605111243400.png" alt="image-20220605111243400"></p>
-<h3 id="对线程的控制"><a href="#对线程的控制" class="headerlink" title="对线程的控制"></a>对线程的控制</h3><h4 id="线程的状态："><a href="#线程的状态：" class="headerlink" title="线程的状态："></a>线程的状态：</h4><ol>
-<li>new</li>
-<li>Runnable</li>
-<li>Blocked</li>
-<li>Waiting</li>
-<li>Timed Waiting</li>
-<li>Terminated</li>
-</ol>
-<h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><p>Thread类或Runnable接口</p>
-<p>new Thread（new Thread1()）.start()</p>
-<p>直接run只会执行同一个线程中的任务，并不会启动新线程</p>
-<p><img src="/images/java/image-20220605111647430.png" alt="image-20220605111647430"></p>
-<p><img src="/images/java/image-20220605111717012.png" alt="image-20220605111717012"></p>
-<h4 id="终止线程"><a href="#终止线程" class="headerlink" title="终止线程"></a>终止线程</h4><p><img src="/images/java/image-20220605111821671.png" alt="image-20220605111821671"></p>
-<h4 id="状态转换"><a href="#状态转换" class="headerlink" title="状态转换"></a>状态转换</h4><p><img src="/images/java/image-20220605112044099.png" alt="image-20220605112044099"></p>
-<p><img src="/images/java/image-20220605112104289.png" alt="image-20220605112104289"></p>
-<p><img src="/images/java/image-20220605112132103.png" alt="image-20220605112132103"></p>
-<p><img src="/images/java/image-20220605112147365.png" alt="image-20220605112147365"></p>
-<p><img src="/images/java/image-20220605112211464.png" alt="image-20220605112211464"></p>
-<p><img src="/images/java/image-20220605112252894.png" alt="image-20220605112252894"></p>
-<p><img src="/images/java/image-20220605112258045.png" alt="image-20220605112258045"></p>
-<p><img src="/images/java/image-20220605112315254.png" alt="image-20220605112315254"></p>
-<h3 id="同步、死锁"><a href="#同步、死锁" class="headerlink" title="同步、死锁"></a>同步、死锁</h3><p>使用sychronized为对象加锁</p>
-<p>避免死锁：线程获取锁的顺序要一致</p>
-<h2 id="反射和泛型"><a href="#反射和泛型" class="headerlink" title="反射和泛型"></a>反射和泛型</h2><h3 id="泛型类、接口、方法"><a href="#泛型类、接口、方法" class="headerlink" title="泛型类、接口、方法"></a>泛型类、接口、方法</h3><p><img src="/images/java/image-20220605142620938.png" alt="image-20220605142620938"></p>
-<p><img src="/images/java/image-20220605142627725.png" alt="image-20220605142627725"></p>
-<p>只有声明泛型的方法才是泛型方法</p>
-<p><img src="/images/java/image-20220605142659417.png" alt="image-20220605142659417"></p>
-<p><img src="/images/java/image-20220605142720677.png" alt="image-20220605142720677"></p>
-<p>如果泛型方法和泛型类声明的泛型名称不一致，泛型方法会覆盖</p>
-<p>静态泛型方法不能使用泛型类中声明的泛型</p>
-<p><img src="/images/java/image-20220605143202293.png" alt="image-20220605143202293"></p>
-<p><img src="/images/java/image-20220605143220435.png" alt="image-20220605143220435"></p>
-<h3 id="泛型通配符"><a href="#泛型通配符" class="headerlink" title="泛型通配符"></a>泛型通配符</h3><p><img src="/images/java/image-20220605143410113.png" alt="image-20220605143410113"></p>
-<p><img src="/images/java/image-20220605143436322.png" alt="image-20220605143436322"></p>
-<h3 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h3><p><img src="/images/java/image-20220605143516462.png" alt="image-20220605143516462"></p>
-<h4 id="通过反射构造类的实例"><a href="#通过反射构造类的实例" class="headerlink" title="通过反射构造类的实例"></a>通过反射构造类的实例</h4><p>method1： </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Date</span> <span class="variable">date1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line"><span class="type">Class</span> <span class="variable">dateClass</span> <span class="operator">=</span> date1.getClass();</span><br><span class="line"><span class="type">Date</span> <span class="variable">Date2</span> <span class="operator">=</span> dateClass.newInstance();<span class="comment">//调用默认的构造函数，如没有，报错</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>method2：</p>
-<p><img src="/images/java/image-20220605143930032.png" alt="image-20220605143930032"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Student</span> <span class="variable">Harry</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(<span class="string">&quot;Harry Potter&quot;</span>, <span class="number">11</span>);</span><br><span class="line"><span class="type">Class</span> <span class="variable">StudentClass</span> <span class="operator">=</span> Harry.getClass();<span class="comment">//获取类</span></span><br><span class="line"><span class="type">Constructor</span> <span class="variable">con</span> <span class="operator">=</span> StudentClass.getConstructor(String.class, <span class="type">int</span>.class);<span class="comment">//获取一个构造函数</span></span><br><span class="line"><span class="type">Student</span> <span class="variable">Ron</span> <span class="operator">=</span> (Student)con.newInstance(<span class="string">&quot;Ron Weasley&quot;</span>, <span class="number">11</span>);</span><br><span class="line">System.out.println(Ron);</span><br></pre></td></tr></table></figure>
-
-<h4 id="获取和修改成员变量"><a href="#获取和修改成员变量" class="headerlink" title="获取和修改成员变量"></a>获取和修改成员变量</h4><p><img src="/images/java/image-20220605144129355.png" alt="image-20220605144129355"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Student</span> <span class="variable">Harry</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(<span class="string">&quot;Harry Potter&quot;</span>, <span class="number">11</span>);</span><br><span class="line"><span class="type">Class</span> <span class="variable">StudentClass</span> <span class="operator">=</span> Harry.getClass();</span><br><span class="line"><span class="type">Field</span> <span class="variable">f</span> <span class="operator">=</span> StudentClass.getDeclaredField(<span class="string">&quot;name&quot;</span>);</span><br><span class="line">f.setAccessible(<span class="literal">true</span>);</span><br><span class="line"><span class="type">Object</span> <span class="variable">v1</span> <span class="operator">=</span> f.get(Harry);</span><br><span class="line">System.out.println(v1);</span><br><span class="line">f.set(Harry,<span class="string">&quot;The boy who lived&quot;</span>);</span><br><span class="line">System.out.println(Harry.getName());</span><br></pre></td></tr></table></figure>
-
-<h4 id="获取成员方法"><a href="#获取成员方法" class="headerlink" title="获取成员方法"></a>获取成员方法</h4><p><img src="/images/java/image-20220605144414292.png" alt="image-20220605144414292"></p>
-<p><img src="/images/java/image-20220605144621921.png" alt="image-20220605144621921"></p>
-<p><img src="/images/java/image-20220605144633982.png" alt="image-20220605144633982"></p>
-<h3 id="设计安全单例"><a href="#设计安全单例" class="headerlink" title="设计安全单例"></a>设计安全单例</h3><p><img src="/images/java/image-20220605144851018.png" alt="image-20220605144851018"></p>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>ip，dns：一个完整的域名一般为： 计算机主机名.本地名.组名.最高层域名</p>
-<p><img src="/images/java/image-20220605145652492.png" alt="image-20220605145652492"></p>
-<p><img src="/images/java/image-20220605145736574.png" alt="image-20220605145736574"></p>
-<h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">server</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String arg[])</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        <span class="type">ServerSocket</span> <span class="variable">ss</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ServerSocket</span>(<span class="number">6666</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;Server running&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (;;)&#123;</span><br><span class="line">            <span class="type">Socket</span> <span class="variable">sock</span> <span class="operator">=</span> ss.accept();</span><br><span class="line">            System.out.println(<span class="string">&quot;connect from&quot;</span>+sock.getRemoteSocketAddress());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">client</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String arg[])</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        <span class="type">Socket</span> <span class="variable">sock</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Socket</span>(<span class="string">&quot;localhost&quot;</span>,<span class="number">6666</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h3><p><img src="/images/java/image-20220605151350719.png" alt="image-20220605151350719"></p>
-<p><img src="/images/java/image-20220605151450198.png" alt="image-20220605151450198"></p>
-<p><img src="/images/java/image-20220605151455259.png" alt="image-20220605151455259"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> /images/java.io.*;</span><br><span class="line"><span class="keyword">import</span> /images/java.net.URL;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception&#123;</span><br><span class="line">URL url=<span class="keyword">new</span> <span class="title class_">URL</span>(<span class="string">&quot;https://www.baidu.com/&quot;</span>);</span><br><span class="line">BufferedReader reader=<span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(url.openStream()));</span><br><span class="line">BufferedWriter writer=<span class="keyword">new</span> <span class="title class_">BufferedWriter</span>(<span class="keyword">new</span> <span class="title class_">FileWriter</span>(<span class="string">&quot;info.html&quot;</span>));</span><br><span class="line">String line;</span><br><span class="line"><span class="keyword">while</span>((line = reader.readLine()) != <span class="literal">null</span>)&#123;</span><br><span class="line">System.out.println(line);</span><br><span class="line">writer.write(line);</span><br><span class="line">writer.newLine();</span><br><span class="line">&#125;</span><br><span class="line">reader.close();</span><br><span class="line">writer.close();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="/images/java/image-20220605151559663.png" alt="image-20220605151559663"></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/06/05/java/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -348,7 +255,7 @@ site.size()
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ecoli-hit.github.io/2022/06/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -358,7 +265,7 @@ site.size()
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="ECOLI">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -371,10 +278,25 @@ site.size()
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2022-06-04 10:23:33 / Modified: 10:40:33" itemprop="dateCreated datePublished" datetime="2022-06-04T10:23:33+08:00">2022-06-04</time>
+              <time title="创建时间：2022-06-04 10:23:33" itemprop="dateCreated datePublished" datetime="2022-06-04T10:23:33+08:00">2022-06-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-06-18 16:23:21" itemprop="dateModified" datetime="2022-06-18T16:23:21+08:00">2022-06-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9D%82%E9%A1%B9/" itemprop="url" rel="index"><span itemprop="name">杂项</span></a>
+                </span>
             </span>
 
           
@@ -388,238 +310,15 @@ site.size()
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h3 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h3><ol>
-<li><p>单一职责原则：一个类仅有一个引起变化的因素（降低耦合性）</p>
-</li>
-<li><p>开闭原则：软件实体对扩展开放对修改封闭，及可以在不修改的情况下扩展</p>
-<ul>
-<li>通过接口和抽象类规定类的特征：相对稳定不易更改，完成对修改封闭</li>
-<li>从抽象类中导出具体类即对扩展开放</li>
-</ul>
-</li>
-<li><p>里氏代换原则：超类可被子类替换</p>
-<ul>
-<li>反之不成立</li>
-</ul>
-</li>
-<li><p>依赖倒转原则：高层模块不依赖与底层模块。应依赖于相应的抽象，即面向接口编程（请举例）</p>
-<ul>
-<li>应当使用接口和抽象类进行变量类型声明、参数类型声明、方法返还类 型说明，以及数据类型的转换等，而不要使用具体类。、</li>
-<li>传统的过程性系统的设计办法倾向于使高层次的模块依赖于低层次的模 块，抽象层次依赖于具体层次。倒转原则就是把这个错误的依赖关系倒 转过来</li>
-</ul>
-</li>
-<li><p>合成复用原则：尽量使用对象组合而不是继承来达到复用的目的</p>
-<ul>
-<li>在新对象中使用已有的对象，对已有对象进行委派达到目的</li>
-<li>其次考虑继承以遵循前述原则，滥用继承可能会增加系统构架和维护时的复杂度</li>
-</ul>
-</li>
-<li><p>接口隔离原则：客户端不应该依赖他不需要的接口</p>
-<ul>
-<li>使用多个专门的接口比使用单一的总接口好。依赖建立于最小的接口上</li>
-<li>当一个接口过大，应将其分为多个小接口，使用该接口的客户端只需要知道与之相关的方法</li>
-</ul>
-</li>
-<li><p>迪米特法则：一个软件实体应当尽可能少的与其他实体发生相互作用</p>
-<ul>
-<li>每一个软件单位对其他的单位都只有最少的知识，而且局限于那些 与本单位密切相关的软件单位</li>
-<li>当一个模块修改时，就会尽量少的影响其他的模块。扩展会 相对容易。这是对软件实体之间通信的限制。它要求限制软件实体 之间通信的宽度和深度</li>
-</ul>
-</li>
-</ol>
-<h3 id="设计模式概念"><a href="#设计模式概念" class="headerlink" title="设计模式概念"></a>设计模式概念</h3><p>代码设计经验总结。描述不断重复事件及其解决方法。提高代码可重用性、可阅读性和可靠性。</p>
-<p>四个基本要素：模式名、问题、解决方案、效果</p>
-<p><strong>作用：</strong></p>
-<ol>
-<li>重用设计</li>
-<li>方便交流</li>
-<li>方便文档编写</li>
-<li>减少重构代价，确保代码正确性，减少错误</li>
-<li>提供框架</li>
-<li>节省时间</li>
-</ol>
-<p><strong>分类</strong>：</p>
-<ol>
-<li>目的<ol>
-<li>创建型模式：怎样创建（将创建与使用分离）</li>
-<li>结构型模式：如何将类和对象布局</li>
-<li>行为型模式：类或对象之间如何相互配合工作怎样进行智能分配</li>
-</ol>
-</li>
-<li>范围<ol>
-<li>类模式：类与类之间的关系，通过继承来建立，静态的，编译时确定</li>
-<li>对象模式：对象之间的关系，组合或聚合实现，在运行时可以变化，具有动态性</li>
-</ol>
-</li>
-</ol>
-<p><img src="/images/image-20220601213122043.png" alt="image-20220601213122043"></p>
-<h3 id="1-单例模式"><a href="#1-单例模式" class="headerlink" title="1.单例模式"></a>1.单例模式</h3><p>保证仅有一个对象实例，提供相应的全局访问点</p>
-<h4 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h4><ol>
-<li><p>饿汉式：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">Singleton</span> <span class="variable">singleton</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton</span> <span class="params">()</span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> singleton ;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>懒汉式：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance ;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton</span> <span class="params">()</span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="literal">null</span>)&#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance ;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>同步锁：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance ;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton</span> <span class="params">()</span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//不会有两个线程同时进入此方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> sychronized <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="literal">null</span>)&#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance ;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>方案：</p>
-<ol>
-<li>私有变量保存单例</li>
-<li>公有静态方法获取</li>
-<li>类定义实例创建时间</li>
-</ol>
-<p><strong>优点</strong>：</p>
-<ol>
-<li>对唯一实例的受控访问</li>
-<li>仅有一个实例减少了内存开销</li>
-<li>避免对共享资源的多重占用</li>
-<li>允许可变数目实例</li>
-<li>可以全局访问</li>
-</ol>
-<h3 id="2-工厂模式"><a href="#2-工厂模式" class="headerlink" title="2.工厂模式"></a>2.工厂模式</h3><h4 id="原始模式："><a href="#原始模式：" class="headerlink" title="原始模式："></a>原始模式：</h4><p><img src="/images/image-20220602094404976.png" alt="image-20220602094404976"></p>
-<p><img src="/images/image-20220602094443031.png" alt="image-20220602094443031"></p>
-<h4 id="简单工厂"><a href="#简单工厂" class="headerlink" title="简单工厂"></a>简单工厂</h4><p>将创建pizza转移到简单工厂中</p>
-<p><img src="/images/image-20220602094747906.png" alt="image-20220602094747906"></p>
-<p><img src="/images/image-20220602094943323-16541345869544.png" alt="image-20220602094943323"></p>
-<p>没有满足ocp原则 </p>
-<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><p><img src="/images/image-20220602095514785-16541349171296.png" alt="image-20220602095514785"></p>
-<p><img src="/images/image-20220602095537305-165413493955110.png" alt="image-20220602095537305"></p>
-<p><strong>比较</strong>：</p>
-<ol>
-<li>简单工厂：<ul>
-<li>不符合开闭原则，用户不感知具体的类，修改时需要修改工厂类</li>
-</ul>
-</li>
-<li>工厂模式：<ul>
-<li>符合开闭原则，但是客户端需要感知具体的工厂类</li>
-<li>横向扩展方便，不用修改代码</li>
-</ul>
-</li>
-</ol>
-<h4 id="抽象工厂"><a href="#抽象工厂" class="headerlink" title="抽象工厂"></a>抽象工厂</h4><p><img src="/images/image-20220602100239635-165413536261014.png" alt="image-20220602100239635"></p>
-<p><img src="/images/image-20220602100128496-165413529089612.png" alt="image-20220602100128496"></p>
-<p><strong>评价</strong>：</p>
-<ol>
-<li>优点：<ul>
-<li>保证客户端只使用同一个产品族的对象</li>
-</ul>
-</li>
-<li>缺点：<ul>
-<li>产品的增加困难</li>
-<li>增加了系统的抽象性和理解难度</li>
-</ul>
-</li>
-</ol>
-<h3 id="3-策略模式"><a href="#3-策略模式" class="headerlink" title="3.策略模式"></a>3.策略模式</h3><p>简化多种算法选择的if-else语句</p>
-<p>将算法和对象分开</p>
-<p>将一组算法相同的过程提取到抽象类中</p>
-<p>逻辑判断在client中</p>
-<p><img src="/images/image-20220602100924972-165413576764816.png" alt="image-20220602100924972"></p>
-<p><img src="/images/image-20220602100939031-165413578129618.png" alt="image-20220602100939031"></p>
-<p><img src="/images/image-20220602101010388-165413581294420.png" alt="image-20220602101010388"></p>
-<p>封装了算法</p>
-<p>方便算法替换</p>
-<p>客户端决定算法的使用</p>
-<p>其重心在于如何组织调度算法</p>
-<p>算法的平等性</p>
-<p>优点：</p>
-<ol>
-<li>提供了一种替代继承的方法，而且既保持了继承的优点（代码重用）还比继承更灵活 （算法独立，可以任意扩展）</li>
-<li>它把采取哪一种算法或采取哪一种行为的逻辑与算法本身分离，避免程序中使用多重 条件转移语句，使系统更灵活，并易于扩展。</li>
-<li>遵守大部分设计原则，高内聚、低偶合</li>
-</ol>
-<p>缺点：</p>
-<ol>
-<li>客户端必须知道所有的策略类，并自行决定使用哪一个策略类。这就意味着客户端必 须理解这些算法的区别，以便适时选择恰当的算法类。换言之，策略模式只适用于客 户端知道算法或行为的情况。</li>
-<li>由于策略模式把每个具体的策略实现都单独封装成为类，如果备选的策略很多的话， 那么对象的数目就会很可观。</li>
-</ol>
-<h3 id="4-迭代器模式"><a href="#4-迭代器模式" class="headerlink" title="4.迭代器模式"></a>4.迭代器模式</h3><p>在客户访问类与聚合类之间插入一个迭代器，这分离了聚合对象与其遍历行为，对客户也隐藏了其内部细节， 且满足“单一职责原则”和“开闭原则”。</p>
-<p><img src="/images/image-20220602101722938.png" alt="image-20220602101722938"></p>
-<p><img src="/images/image-20220602101821737.png" alt="image-20220602101821737"></p>
-<h3 id="5-数据访问对象模式（DAO）"><a href="#5-数据访问对象模式（DAO）" class="headerlink" title="5.数据访问对象模式（DAO）"></a>5.数据访问对象模式（DAO）</h3><p>将数据访问从高级业务中分离</p>
-<p>内容：</p>
-<ul>
-<li>数据访问接口</li>
-<li>数据访问实体类</li>
-<li>模型对象&#x2F;数值对象</li>
-</ul>
-<p>优点：隔离数据层</p>
-<p>缺点：代码量增加</p>
-<p><img src="/images/image-20220602161132296.png" alt="image-20220602161132296"></p>
-<h3 id="6-MVC模式"><a href="#6-MVC模式" class="headerlink" title="6.MVC模式"></a>6.MVC模式</h3><p>组件特征：内容、外观、行为</p>
-<p>MVC模式：</p>
-<ol>
-<li>模型：<ul>
-<li>存储完整的内容</li>
-<li>实现改变内容和查找内容的方法</li>
-<li>模型没有用户界面，是完全不可见的</li>
-</ul>
-</li>
-<li>视图<ul>
-<li>一个模型可以有多个视图</li>
-<li>每个视图可以显示全部或不同部分和不同方面的内容</li>
-<li>模型更新时，相关联的视图同步更新</li>
-</ul>
-</li>
-<li>控制器：<ul>
-<li>使视图和模型分离</li>
-<li>负责处理用户输入事件</li>
-<li>决定对事件对模型的更改</li>
-</ul>
-</li>
-</ol>
-<p><img src="/images/image-20220602161712250.png" alt="image-20220602161712250"></p>
-<h3 id="7-生产者-消费者模式"><a href="#7-生产者-消费者模式" class="headerlink" title="7.生产者-消费者模式"></a>7.生产者-消费者模式</h3><p><img src="/images/image-20220602161821819-16541579026421.png" alt="image-20220602161821819"></p>
-<ul>
-<li>如果生产者生产速度过快，消费者消费的很慢，并且缓存区达到了最大时。 缓存区会阻塞生产者，让生产者停止生产，等待消费者消费了数据后，再 唤醒生产者</li>
-<li>当消费者消费速度过快时，缓存区为空时。缓存区则会阻塞消费者，待生 产者向队列添加数据后，再唤醒消费者。</li>
-<li>数据一致问题：同步锁（synchronized）</li>
-<li>消费者和生产者的协同：线程内部通信（wait（），notify（））</li>
-</ul>
-<p>缓冲区：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Buffer</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> List&lt;Integer&gt; data = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>缓冲区的判断条件为while不是if：防止错误的唤醒</p>
-<p>java 中wait（）在同步块内： 防止出现Lost Wake-up</p>
-<p>优点：</p>
-<ol>
-<li><p>并发：通过异步实现高并发，将一个耗时的流程进行拆分</p>
-</li>
-<li><p>解耦：生产和消费进行解耦</p>
-</li>
-</ol>
-<h3 id="8-观察者模式"><a href="#8-观察者模式" class="headerlink" title="8.观察者模式"></a>8.观察者模式</h3><p>一个对象的状态或行为的变化将导致其他对象的状态和行为也发生改变</p>
-<ul>
-<li>定义了对象间一种一对多的依赖关系</li>
-<li>发生改变的对象称为观察目标，被通知的对象为观察者</li>
-<li>一个观察目标可以对应多个观察者</li>
-<li>是一种对象行为型模式</li>
-</ul>
-<p><img src="/images/image-20220602162924613-16541585655373.png" alt="image-20220602162924613"></p>
-<p><img src="/images/image-20220602162955955.png" alt="image-20220602162955955"></p>
-<p><img src="/images/image-20220602163004787.png" alt="image-20220602163004787"></p>
-<p>优点：</p>
-<ol>
-<li>实现表示层和数据逻辑的分离</li>
-<li>观测目标和观察者之间的抽象的耦合</li>
-<li>支持广播通信，简化了一对多系设计的难度</li>
-<li>符合开闭原则，新增具体的观察者无需修改</li>
-</ol>
-<p>缺点：</p>
-<ol>
-<li>遍历观察者开销大</li>
-<li>存在循环依赖会导致系统崩溃</li>
-<li>没有响应的机制让观察者知道所观察的对象发生变化的原因</li>
-</ol>
-<p>使用场景：</p>
-<ol>
-<li>一个抽象模型有两个方面，其中一个方面依赖于另一个方面，将这两个方面 封装在独立的对象中使它们可以各自独立地改变和复用 </li>
-<li>一个对象的改变将导致一个或多个其他对象发生改变，且并不知道具体有多 少对象将发生改变，也不知道这些对象是谁 </li>
-<li>需要在系统中创建一个触发链</li>
-</ol>
-
+          Welcome to my blog, enter password to read.
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/06/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -637,7 +336,7 @@ site.size()
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ecoli-hit.github.io/2022/05/19/%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84hexo%E8%BF%87%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -647,7 +346,7 @@ site.size()
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="ECOLI">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -660,10 +359,10 @@ site.size()
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="Created: 2022-05-19 14:02:48 / Modified: 23:10:36" itemprop="dateCreated datePublished" datetime="2022-05-19T14:02:48+08:00">2022-05-19</time>
+              <time title="创建时间：2022-05-19 14:02:48 / 修改时间：23:10:36" itemprop="dateCreated datePublished" datetime="2022-05-19T14:02:48+08:00">2022-05-19</time>
             </span>
 
           
@@ -706,7 +405,7 @@ site.size()
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ecoli-hit.github.io/2022/05/19/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -716,7 +415,7 @@ site.size()
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="ECOLI">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -729,9 +428,9 @@ site.size()
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2022-05-19 13:30:01" itemprop="dateCreated datePublished" datetime="2022-05-19T13:30:01+08:00">2022-05-19</time>
+              <time title="创建时间：2022-05-19 13:30:01" itemprop="dateCreated datePublished" datetime="2022-05-19T13:30:01+08:00">2022-05-19</time>
             </span>
 
           
@@ -817,10 +516,10 @@ site.size()
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -840,12 +539,20 @@ site.size()
           <a href="/archives/">
         
           <span class="site-state-item-count">4</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
-      <div class="site-state-item site-state-tags">
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -877,7 +584,7 @@ site.size()
   </span>
   <span class="author" itemprop="copyrightHolder">John Doe</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         
@@ -916,6 +623,10 @@ site.size()
 
 
 
+  
+<script src="/js/local-search.js"></script>
+
+
 
 
 
@@ -931,5 +642,5 @@ site.size()
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>
