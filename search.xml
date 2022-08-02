@@ -234,4 +234,16 @@ site.size()
         <tag>oop</tag>
       </tags>
   </entry>
+  <entry>
+    <title>intro2nlp</title>
+    <url>/2022/08/02/intro2nlp/</url>
+    <content><![CDATA[<object data="../images/intro2nlp/report.pdf" type="application/pdf" width="100%" height="800px">]]></content>
+      <categories>
+        <category>nlp</category>
+      </categories>
+      <tags>
+        <tag>smt</tag>
+        <tag>nmt</tag>
+      </tags>
+  </entry>
 </search>
