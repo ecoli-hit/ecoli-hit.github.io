@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I'm a third year undergraduate student from [School of EECS](https://eecs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). My research interest includes computer vision, computer graphics, machine learning, and computational photography.
+I'm a third-year undergraduate student from [School of CS](http://cs.hitsz.edu.cn/), [Harbin Institute of Technology， ShenZhen](https://www.hitsz.edu.cn/index.html). My research interest includes natural language processing and machine learning.
 
-I am very fortunate to be advised by [Prof. XXX](https://www.XXX.com/) of XXX Lab from [School of Computer Science](https://cs.pku.edu.cn/), Peking University. I was advised by [Prof. XX](https://XXX.pku.edu.cn/) from [School of Computer Science](https://cs.pku.edu.cn/), Peking University.
+I am very fortunate to be advised by [Prof. Xuebo Liu](https://sunbowliu.github.io/) of HITSZ-ICI-哈翻深圳团队 Lab from [School of Computer Science](http://cs.hitsz.edu.cn/), Harbin Institute of Technology， ShenZhen.
 
-You can find my CV here: [XX's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
+My CV is here: [Xinyu Ma's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
 [Email](mailto:XX@stu.pku.edu.cn) / [Github](https://github.com/QiuDi233) / [Wechat](../images/wechat.jpg) / [CSDN](https://blog.csdn.net/qd1813100174?spm=1000.2115.3001.5343)
