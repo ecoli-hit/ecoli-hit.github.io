@@ -20,7 +20,7 @@ My research interest includes natural language processing and machine translatio
 + 【2023.6.24】EMNLP2023 Conference submission, my very first paper. We propose an approach that leverages Fisher Information to search the task specific parameters of pretrained multilingual model to represent language pairs and propose Pseudo Family for language clustering.
 
 ## Experience
-+ teaching assistance
++ teaching assistant
   + COMP2008 Principles of computer composition experience
 
 ## Miscellaneous
