@@ -22,3 +22,6 @@ My research interest includes natural language processing and machine translatio
 ## Experience
 + teaching assistance
   + COMP2008 Principles of computer composition experience
+
+## Miscellaneous
++ [Prof. Xuebo Liu](https://sunbowliu.github.io/) is an exceptionally outstanding mentor who has provided me with invaluable assistance in my research endeavors. He has guided me in developing systematic research habits and has been a guiding light throughout my research journey.
