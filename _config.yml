@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Xinyu Ma"
   avatar           : "profile.png"
-  bio              : "Undergraduate \n 
-                      Harbin Institute of Technology,ShenZhen(HITSZ)"
+  bio              : "Undergraduate" \\
+                      "Harbin Institute of Technology,ShenZhen(HITSZ)"
   location         : "ShenZhen,China"
   # employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
