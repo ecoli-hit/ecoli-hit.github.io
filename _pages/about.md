@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a third-year undergraduate student from [School of CS](http://cs.hitsz.edu.cn/), [Harbin Institute of Technology， ShenZhen](https://www.hitsz.edu.cn/index.html). I am very fortunate to be advised by [Prof. Xuebo Liu](https://sunbowliu.github.io/) of HITSZ-ICI-哈翻深圳团队 from [School of Computer Science](http://cs.hitsz.edu.cn/), Harbin Institute of Technology， ShenZhen.
+I'm a third-year undergraduate student from [School of CS](http://cs.hitsz.edu.cn/), [Harbin Institute of Technology， ShenZhen](https://www.hitsz.edu.cn/index.html). I am very fortunate to be advised by [Prof. Xuebo Liu](https://sunbowliu.github.io/) of HITSZ-ICI-happytrans lab from [School of Computer Science](http://cs.hitsz.edu.cn/), Harbin Institute of Technology， ShenZhen.
 My CV is here: [Xinyu Ma's Curriculum Vitae](../assets/CV.pdf).
 ## Research Interest
 My research interest includes natural language processing and machine translation ：
