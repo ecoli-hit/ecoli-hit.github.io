@@ -21,8 +21,22 @@ My research interest includes natural language processing and machine translatio
 + We propose an approach that leverages Fisher Information to search the task specific parameters of pretrained multilingual model to represent language pairs and propose Pseudo Family for language clustering.
 
 ## Research
-+【On process】EMNLP2023 Conference submission "**Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix **"
++ 【On process】EMNLP2023 Conference submission "Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix"
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="emnlp23\layer_distribute.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">layer_distribution</div>
+</center>
+
 ## Competition
++ The 4th IKCEST The Belt and Road International Big Data Competition and the 8th Baidu & Xian Jiaotong University Big Data Competition
++ ASC22 Student Supercomputer Challenge
+
 
 ## Experience
 + teaching assistant
