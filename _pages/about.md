@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a third-year undergraduate student from [School of CS](http://cs.hitsz.edu.cn/), [Harbin Institute of Technology， ShenZhen](https://www.hitsz.edu.cn/index.html). I am very fortunate to be advised by [Prof. Xuebo Liu](https://sunbowliu.github.io/) of HITSZ-ICI-happytrans lab from [School of Computer Science](http://cs.hitsz.edu.cn/), Harbin Institute of Technology， ShenZhen.
+I'm a third-year undergraduate student from [School of CS](http://cs.hitsz.edu.cn/), [Harbin Institute of Technology， ShenZhen](https://www.hitsz.edu.cn/index.html). I am very fortunate to be advised by [Prof. Xuebo Liu](https://sunbowliu.github.io/) of HITSZ-ICI-HappyTrans team from [School of Computer Science](http://cs.hitsz.edu.cn/), Harbin Institute of Technology，ShenZhen.
 My CV is here: [Xinyu Ma's Curriculum Vitae](../assets/CV.pdf).
 ## Research Interest
 My research interest includes natural language processing and machine translation ：
@@ -17,7 +17,12 @@ My research interest includes natural language processing and machine translatio
 +  parameter-efficiency tuning
 
 ## News 
-+ 【2023.6.24】EMNLP2023 Conference submission, my very first paper. We propose an approach that leverages Fisher Information to search the task specific parameters of pretrained multilingual model to represent language pairs and propose Pseudo Family for language clustering.
++ 【2023.6.24】EMNLP2023 Conference submission, my very first paper "Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix".
++ We propose an approach that leverages Fisher Information to search the task specific parameters of pretrained multilingual model to represent language pairs and propose Pseudo Family for language clustering.
+
+## Research
++【On process】EMNLP2023 Conference submission "**Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix **"
+## Competition
 
 ## Experience
 + teaching assistant
