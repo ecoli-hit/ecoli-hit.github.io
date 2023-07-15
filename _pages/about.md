@@ -22,13 +22,7 @@ My research interest includes natural language processing and machine translatio
 
 ## Research
 + 【On process】EMNLP2023 Conference submission "Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix"
-<center>
-    <img src="emnlp23\layer_distribute.png" width="400"><img src="emnlp23\similarity.png" width="400">
-    <!-- <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">layer_distribution</div> -->
-</center>
+![描述](emnlp23\layer_distribute.png)![描述](emnlp23\similarity.png)
 
 ## Competition
 + The 4th IKCEST The Belt and Road International Big Data Competition and the 8th Baidu & Xian Jiaotong University Big Data Competition
