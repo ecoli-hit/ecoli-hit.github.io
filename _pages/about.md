@@ -31,7 +31,7 @@ My research interest includes natural language processing and machine translatio
 
 ## Competition
 + The 4th IKCEST The Belt and Road International Big Data Competition and the 8th Baidu & Xian Jiaotong University Big Data Competition
-  + We complete eight directions from Chinese \leftrightarrow French, French to Chinese, Chinese to Russian, Russian to Chinese, Chinese to Thai, Thai to Chinese, Chinese to Arabic and Arabic to Chinese.
+  + We complete eight directions from Chinese \[ \leftrightarrow \] French, French to Chinese, Chinese to Russian, Russian to Chinese, Chinese to Thai, Thai to Chinese, Chinese to Arabic and Arabic to Chinese.
 + ASC22 Student Supercomputer Challenge
 
 
