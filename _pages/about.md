@@ -31,8 +31,13 @@ My research interest includes natural language processing and machine translatio
 
 ## Competition
 + The 4th IKCEST The Belt and Road International Big Data Competition and the 8th Baidu & Xian Jiaotong University Big Data Competition
-  + We complete eight directions from Chinese $$ \leftrightarrow $$ French, French to Chinese, Chinese to Russian, Russian to Chinese, Chinese to Thai, Thai to Chinese, Chinese to Arabic and Arabic to Chinese.
+  + We complete eight directions from Chinese $$ \leftrightarrow $$ French, Chinese $$ \leftrightarrow $$ Russian, Chinese $$ \leftrightarrow $$ Thai,and Chinese $$ \leftrightarrow $$ Arabic.
+  + Our team enployed many approachs, including backtranslation, rdrop, using r2l model for reranking, using pre fine-tuned model for data selection. I have conducted most of the training approach.
+  + The average increase of approximately 2.0 BLEU score, we attained the third prize in the final competition as an undergraduate team, achieving an average BLEU
+score of 32.965 for Chinese-Arabic translation.
 + ASC22 Student Supercomputer Challenge
+  + I was responsible for optimizing the training process of the deepmp-kit machine learning molecular dynamics tool. Utilized knowledge of OpenMP, assembly language, and SIMD (Single Instruction, Multiple Data) to perform loop unrolling, memory optimization, and parallel processing on the algorithm.
+  + Our team was awarded the second prize.
 
 
 ## Experience
