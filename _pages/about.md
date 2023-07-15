@@ -22,10 +22,9 @@ My research interest includes natural language processing and machine translatio
 
 ## Research
 + 【On process】EMNLP2023 Conference submission "Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix"
-<!-- ![描述](emnlp23\layer_distribute.png)![描述](emnlp23\similarity.png) -->
-
+  + Multilingual Neural Machine Translation(MNMT) is aiming for constructing a single model to translate multiple languages, using Language Family to implement traning can yield outperformance results. But there is asymmetric when using linguistic information to clustering languages family. To address this gap, we introduce a novel approach to pseudo language family clustering, which is inherently dependent on the MNMT model itself. Our proposed methodology hypothesizes that language pairs exhibiting similarities in their impact on model parameters are likely to possess a high level of congruence and should, consequently, be grouped together. We employ the fisher information matrix (FIM) to quantify such similarities between language pairs. We demonstrate the efficacy of our approach by enhancing low-resource NMT with pseudo language family clustering, yielding superior results when compared to the conventional use of language family categorization.
 <center class="half">
-     <img src="emnlp23\layer_distribute.png" width="200"/><img src="emnlp23\similarity.png" width="200"/>
+     <img src="emnlp23\layer_distribute.png" width="400"/><img src="emnlp23\similarity.png" width="400"/>
 </center>
 
 ## Competition
