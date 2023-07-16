@@ -15,7 +15,6 @@ My research interest includes natural language processing and machine translatio
 +  parameter-efficient fine-tuning
 +  low-resource machine translation
 +  multilingual translation
-+  
 
 
 ## News 
