@@ -41,7 +41,7 @@ score of 32.965 for Chinese-Arabic translation.
 
 ## Experience
 + teaching assistant
-  + COMP2008 Principles of computer composition experience
+  + COMP2008 Principles of Computer Composition Experiment
 
 ## Miscellaneous
 + [Prof. Xuebo Liu](https://sunbowliu.github.io/) is an exceptionally outstanding mentor who has provided me with invaluable assistance in my research endeavors. He has guided me in developing systematic research habits and has been a guiding light throughout my research journey.
