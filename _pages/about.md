@@ -18,10 +18,11 @@ My research interest includes natural language processing and machine translatio
 
 
 ## News 
++ 【2023.10.8】EMNLP2023 accept main "Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix"
 + 【2023.6.24】EMNLP2023 Conference submission, my very first paper "Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix".
 
 ## Research
-+ 【In process】EMNLP2023 Conference submission "Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix"
++ 【EMNLP2023 main】"Clustering Pseudo Language Family in Multilingual Translation Models with Fisher Information Matrix"
   +  We introduce a novel approach to pseudo language family clustering, which is inherently dependent on the MNMT model itself. Our proposed methodology hypothesizes that language pairs exhibiting similarities in their impact on model parameters are likely to possess a high level of congruence and should, consequently, be grouped together. We employ the fisher information matrix (FIM) to quantify such similarities between language pairs. We demonstrate the efficacy of our approach by enhancing low-resource NMT with pseudo language family clustering, yielding superior results when compared to the conventional use of language family categorization.
 
 <center class="half">
@@ -41,7 +42,7 @@ score of 32.965 for Chinese $$ \leftrightarrow $$ Arabic translation.
 
 ## Experience
 + teaching assistant
-  + COMP2008 Principles of Computer Composition
+  + COMP2008 Digital Logic Design
 
 ## Miscellaneous
 + [Prof. Xuebo Liu](https://sunbowliu.github.io/) is an exceptionally outstanding mentor who has provided me with invaluable assistance in my research endeavors. He has guided me in developing systematic research habits and has been a guiding light throughout my research journey.
