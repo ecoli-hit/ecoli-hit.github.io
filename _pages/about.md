@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I'm a third-year undergraduate student from [School of Computer Science](http://cs.hitsz.edu.cn/), [Harbin Institute of Technology， ShenZhen](https://www.hitsz.edu.cn/index.html). I am very fortunate to be advised by [Prof. Xuebo Liu](https://sunbowliu.github.io/) of HITSZ-ICI-HappyTrans team from [School of Computer Science](http://cs.hitsz.edu.cn/), Harbin Institute of Technology，ShenZhen.
+I'm a first-year graduate student from [School of Computer Science](http://cs.hitsz.edu.cn/), [Harbin Institute of Technology, ShenZhen](https://www.hitsz.edu.cn/index.html). I am very fortunate to be advised by [Prof. Xuebo Liu](https://sunbowliu.github.io/) of HITSZ-ICI-HappyTrans team from [School of Computer Science](http://cs.hitsz.edu.cn/), Harbin Institute of Technology，ShenZhen.
 My CV is here: [Xinyu Ma's Curriculum Vitae](../assets/CV.pdf).
 ## Research Interest
 My research interest includes natural language processing and machine translation ：
-+  parameter-efficient fine-tuning
-+  low-resource machine translation
-+  multilingual translation
++  Large Model Data Synthesis
++  Task-specific Instruction Fine-tuning
++  Low-resource Machine Translation
 
 
 ## News 
@@ -29,7 +29,7 @@ My research interest includes natural language processing and machine translatio
      <img src="emnlp23\main.png" width="300"/><img src="emnlp23\similarity.png" width="300"/>
 </center>
 
-## Competition
+## Competitions
 + The 4th IKCEST The Belt and Road International Big Data Competition and the 8th Baidu & Xian Jiaotong University Big Data Competition
   + We complete eight directions from Chinese $$ \leftrightarrow $$ French, Chinese $$ \leftrightarrow $$ Russian, Chinese $$ \leftrightarrow $$ Thai,and Chinese $$ \leftrightarrow $$ Arabic.
   + Our team enployed many approachs, including backtranslation, rdrop, using r2l model for reranking, using pre fine-tuned model for data selection. I have conducted most of the training approach.
