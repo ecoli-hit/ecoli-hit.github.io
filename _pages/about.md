@@ -41,7 +41,7 @@ score of 32.965 for Chinese $$ \leftrightarrow $$ Arabic translation.
 
 
 ## Experience
-+ teaching assistant
++ Teaching Assistant
   + COMP2008 Digital Logic Design
 
 ## Miscellaneous
