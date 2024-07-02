@@ -12,8 +12,8 @@ I'm a first-year graduate student from [School of Computer Science](http://cs.hi
 My CV is here: [Xinyu Ma's Curriculum Vitae](../assets/CV.pdf).
 ## Research Interest
 My research interest includes natural language processing and machine translation ：
-+  Large Model Data Synthesis
-+  Task-specific Instruction Fine-tuning
++  Large Model Transfer Learning and Data Synthesis
++  Large Model Task-specific Instruction Fine-tuning
 +  Low-resource Machine Translation
 
 
